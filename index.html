@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Setting the Title of the Website -->
+	<title>Notes App</title>
+
+	<!-- Adding the Bootstrap & google fonts -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+	
+	<!-- Adding the CSS File -->
+	<link rel="stylesheet" href="index.css">
+	
+	<!-- Adding the Website Icon -->
+	<link rel="icon" href="websiteIcon.png">
+
+</head>
+
+<body>
+	<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark" id="Menu">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Magic Notes 📚</a>
+		</div>
+	</nav>
+	
+	<div id="issues">
+	</div>
+	
+	<div class="container my-3">
+		<h1 class="text-black">Welcome To Magic Notes 📝</h1>
+		<div class="card UserCard" id="UserNotes">
+			<div class="card-body">
+				<h3 class="card-title my-2">Note Title</h3>
+				<input class="form-control Noteheading" id="NoteTitle">
+				<h3 class="card-title"></i>Add a Note</h3>
+				<div class="form-group">
+					<textarea class="form-control" id="addTxt"></textarea>
+				</div>
+				<a href="#SavedNotes" style="text-decoration: none;">
+					<button class="btn btn-primary my-4" id="addBtn">
+						Add Note
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="container my-4 savednotes" id="noNotesFound">
+			<hr size="5" color="black">
+			<h2 id="SavedNotes">Your Saved Notes !</h2>
+			<hr size="5" color="black">
+		</div>
+
+		<div class="row container-fluid" id="notes">
+
+		</div>
+
+	</div>
+
+
+	<div class="container-fluid bg-black text-white" id="footer">
+		<div class="row">
+			<div class="col col-12 col-md-6 col-sm-12 p-4">
+				<center>
+					<span><b>About Us</b></span><br>
+					This is Specially designed to <b>save time to take notes easily</b> with the track of <b>creation time</b>.Also
+					You can <b>search your notes</b> easily <b>using search box</b>. Your <b>Privacy</b> is maintained.<br>
+				</center>
+			</div>
+			<div class="col col-12 col-md-6 col-sm-12 p-4">
+				<center>
+					<span><b>Contact Us</b></span><br>
+					<a class="link mx-10 m-sm-3 mx-xl-3" href="mailto:sanjayasukhwani@gmail.com" target="_blank"><img
+							class="my-2 social-media" src="gmail.png" alt="Gmail icon" height="50px"></a>
+					<a class="link  mx-10 m-sm-3 mx-xl-3" href="https://twitter.com/sukhwani_sanjay"
+						target="_blank"><img class="my-2 social-media" src="twitter.png" alt="Twitter icon"
+							height="50px"></a>
+					<a class="link  mx-10 m-sm-3 mx-xl-3" href="https://www.facebook.com/profile.php?id=100069005771579"
+						target="_blank"><img class="my-2 social-media" src="facebook.png" alt="Facebook icon"
+							height="50px"></a>
+					<a class="link  mx-10 m-sm-3 mx-xl-3" href="https://www.instagram.com/itssanjay.sukhwani/"
+						target="_blank"><img class="my-2 social-media" src="instagram.png" alt="Instagram icon"
+							height="50px"></a>
+				</center>
+			</div>
+		</div>
+		<marquee class="my-1"><b>Designed and Developed with ❤ by Sanjay Sukhwani </b></marquee>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>

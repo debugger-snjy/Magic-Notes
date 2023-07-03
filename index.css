@@ -1,0 +1,208 @@
+body {
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  box-shadow: -1px 5px 15px 2px black;
+}
+
+.btn-primary {
+  color: #000;
+  background-color: #4c91f7;
+  border-color: #0066fd;
+}
+.showBtn {
+  width: 300px;
+}
+.UserCard {
+  position: static;
+  top: 40px;
+  background: #40e2d38c;
+  border-radius: 10px;
+  box-shadow: 7px 9px 8px 6px #0000008c;
+}
+
+#addTxt {
+  height: 100px;
+}
+
+#searchNote{
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  background: #ffc0cb98;
+  font-size: 18px;
+  font-weight: 700;
+  width: 60%;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#searchNote::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;  
+}
+
+#searchNote:hover {
+  box-shadow: 6px 4px 7px black;
+}
+#status {
+  font-size: 20px;
+  color: black;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  width: 40%;
+  background: #ffc0cb8a;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  font-weight: 600;
+}
+
+#status:hover{
+  box-shadow: 5px 5px 5px black;
+
+}
+
+@media (max-width : 1000px) and (min-width:320px)
+{
+    #searchNote,#status{
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        /* margin-top: 10px; */
+        margin-bottom: 10px;
+    }
+
+}
+
+#addTxt,
+.Noteheading {
+  background: #0c02036b;
+  color: white;
+  border-radius: 7px;
+  font-size: 1.25rem;
+  border: 2px solid #0c02036b;
+  box-shadow: 5px 4px 5px 3px #50474785;
+  margin-bottom: 10px;
+}
+
+#NoteTitle {
+  background-color: #0c02036b;
+  color: white;
+  font-weight: 900;
+}
+
+#addTxt:hover,
+#addTxt:focus,
+.Noteheading:hover,
+.Noteheading:focus {
+  box-shadow: 6px 6px 10px 3px black;
+  border: 2px solid black;
+}
+
+.noteCard:hover {
+  background: #fdc9d1;
+  border: 2px solid #000000;
+  box-shadow: 11px 11px 15px 5px #000000;
+  transform: scale(1.1);
+}
+
+.noteCard {
+  background: pink;
+  color: black;
+  font-weight: 480;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: inset 0px 1px 20px 5px #afa2a4;
+  transform: scale(1);
+  transition-property: transform, background, border, box-shadow;
+  transition-duration: 0.5s;
+}
+#NoteTxt_Data {
+  font-weight: 500;
+}
+
+hr {
+  opacity: 1;
+}
+#addBtn {
+  background: #22a609a6;
+  color: black;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 218px;
+  border: 2px solid green;
+  box-shadow: 6px 6px 11px 1px #000000b0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#addBtn:hover {
+  box-shadow: 5px 5px 13px 3px black;
+}
+
+.display,
+.title {
+  display: inline-block;
+  width: 400px;
+}
+
+#notes {
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+#notedt_time {
+  font-size: 12px;
+  /* font-style: italic; */
+  font-weight: 650;
+  color: blue;
+}
+
+.EditBtn,
+.DelBtn {
+  display: block;
+  margin: 7px auto;
+  width: 150px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+h1,
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.DelBtn {
+  background: #ff3333a3;
+  border: 2px solid #ff3333;
+}
+.EditBtn {
+  background: #3397ffa3;
+  border: 2px solid #007bff;
+}
+
+.DelBtn:hover {
+  background: #ff0000cc;
+  border: 2px solid #ff3333;
+}
+.EditBtn:hover {
+  background: #007cfdc9;
+  border: 2px solid #007bff;
+}
+
+#footer {
+  bottom: 0px;
+  margin-top: 100px;
+}
+
+marquee{
+    color: yellow;
+}
